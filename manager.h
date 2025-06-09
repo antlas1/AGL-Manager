@@ -8,6 +8,8 @@
 #include <QListWidget>
 #include <QEvent>
 
+#include "talkwrap.h"
+
 namespace Ui {
 class Manager;
 }
@@ -36,4 +38,5 @@ private slots:
 private:
     Ui::Manager *ui;
     void keyPressEvent(QKeyEvent *event);
+    TalkWrap talk_;
 };

@@ -27,6 +27,8 @@ Manager::Manager(QWidget *parent)
     connect(ui->b_Delete, &QPushButton::clicked, this, &Manager::s_Delete);
     connect(ui->b_Updata, &QPushButton::clicked, this, &Manager::s_Update);
 
+    //вывод talk
+    talk_.output("Привет мир!");
 }
 
 Manager::~Manager()
